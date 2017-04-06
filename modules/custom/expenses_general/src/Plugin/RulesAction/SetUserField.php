@@ -28,9 +28,14 @@ class SetUserField extends RulesActionBase {
 		 *    The entity to be deleted.
 		 */
 		protected function doExecute(EntityInterface $entity) {
-				//$a = 0;
+				$a = 0;
 				$user_id = \Drupal::currentUser()->id();
-				
+				$entity_array = $entity->toArray();
+				$nid = $entity_array['nid'][0]['value'];
+				$node = Node::load($nid);
+				$node->field_user->target_id = $user_id;
+				$node->save();
+
 		}
 
 }
