@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Vagrant Debug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="Vagrant Server" session_id="MY_KEY">
+    <method />
+  </configuration>
+</component>

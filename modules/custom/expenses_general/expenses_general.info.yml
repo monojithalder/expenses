@@ -1,0 +1,5 @@
+name: Expenses General
+type: module
+description: Custom Functionlity of Expenses Peoject
+core: 8.x
+package: Expenses

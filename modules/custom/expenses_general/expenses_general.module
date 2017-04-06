@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Contains expenses_general.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity;
+
+/**
+ * Implements hook_help().
+ */
+function expenses_general_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the expenses_general module.
+    case 'help.page.expenses_general':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Functionlity of Expenses Peoject') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function expenses_general_form_alter(&$form, FormStateInterface $form_state, $form_id){
+		$a = 0;
+		//dsm($form);
+		$form['field_user']['#access'] = FALSE;
+		$form['field_payment_method_type']['widget']['#ajax'] = [
+				'callback' => 'test_callback',
+				'wrapper' => 'admin_area_wrapper',
+				'event' => 'change',
+		];
+		$form['#prefix'] = '<div id="admin_area_wrapper">';
+		$form['#suffix'] = '</div>';
+}
+
+function test_callback(array &$form, FormStateInterface $form_state) {
+		$entity =  \Drupal::entityManager();
+		$field_payment_type = $form_state->getValue('field_payment_method_type');
+		$tid = $field_payment_type[0]['target_id'];
+		$term_name = \Drupal\taxonomy\Entity\Term::load($tid)->get('name')->value;
+		switch ($term_name) {
+				case 'CASH' :
+						$form['field_cvv_no']['#access']         = FALSE;
+						$form['field_card_no']['#access'] 			 = FALSE;
+						$form['field_expiry_date']['#access'] 	 = FALSE;
+						$form['field_bank_reference']['#access'] = FALSE;
+						//$response->addCommand(new ReplaceCommand('.field--name-field-cvv-no', ''));
+						break;
+				case 'PAYTM' :
+						$form['field_cvv_no']['#access']         = FALSE;
+						$form['field_card_no']['#access'] 			 = FALSE;
+						$form['field_expiry_date']['#access'] 	 = FALSE;
+						$form['field_bank_reference']['#access'] = FALSE;
+						break;
+				case 'FREECHARGE' :
+						$form['field_cvv_no']['#access']         = FALSE;
+						$form['field_card_no']['#access'] 			 = FALSE;
+						$form['field_expiry_date']['#access'] 	 = FALSE;
+						$form['field_bank_reference']['#access'] = FALSE;
+						break;
+				case 'NEFT' :
+						$form['field_cvv_no']['#access']         = FALSE;
+						$form['field_card_no']['#access'] 			 = FALSE;
+						$form['field_expiry_date']['#access'] 	 = FALSE;
+						break;
+				Default :
+						$form['field_cvv_no']['#access']         = TRUE;
+						$form['field_card_no']['#access'] 			 = TRUE;
+						$form['field_expiry_date']['#access'] 	 = TRUE;
+						$form['field_bank_reference']['#access'] = TRUE;
+						break;
+		}
+	  return $form;
+}

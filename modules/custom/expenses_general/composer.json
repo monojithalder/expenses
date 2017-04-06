@@ -1,0 +1,14 @@
+{
+  "name": "drupal/expenses_general",
+  "type": "drupal-module",
+  "description": "Custom Functionlity of Expenses Peoject",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/expenses_general",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/expenses_general",
+    "source": "http://cgit.drupalcode.org/expenses_general"
+  },
+  "require": { }
+}
