@@ -1,0 +1,23 @@
+uuid: e456eb31-2433-4677-afe2-0e2e03f174b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bank_status
+    - node.type.bank_account
+  module:
+    - options
+id: node.bank_account.field_bank_status
+field_name: field_bank_status
+entity_type: node
+bundle: bank_account
+label: 'Bank Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Active
+default_value_callback: ''
+settings: {  }
+field_type: list_string

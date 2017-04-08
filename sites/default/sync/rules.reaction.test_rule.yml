@@ -1,0 +1,48 @@
+uuid: 67a961fd-84ad-4704-9265-1c2a399f1e1f
+langcode: en
+status: true
+dependencies: {  }
+id: test_rule
+label: 'Create Bank Transaction'
+events:
+  -
+    event_name: 'rules_entity_insert:node'
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: c57e461c-a99a-4051-a3f5-ccf5564006b1
+  conditions:
+    id: rules_and
+    uuid: 9a4ae0a9-fe87-4577-9d25-2430755af024
+    conditions:
+      -
+        id: rules_condition
+        uuid: 3de0d239-7b4f-40ed-a81e-a0f203a9c3c3
+        context_values:
+          types:
+            - "expenses\r"
+            - income
+        context_mapping:
+          node: node
+        context_processors:
+          types:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_node_is_of_type
+        negate: false
+  actions:
+    id: rules_action_set
+    uuid: 2b79e5d5-03d8-4253-bb22-a136c4ea1b58
+    actions:
+      -
+        id: rules_action
+        uuid: 7ff6a660-a8fd-4812-be09-65ebd28903e8
+        context_values: {  }
+        context_mapping:
+          entity: node
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: rules_create_bank_transaction

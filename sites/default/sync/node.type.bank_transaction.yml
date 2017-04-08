@@ -1,0 +1,18 @@
+uuid: a9a93a78-d135-4c95-954a-4937e35d9cb8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Bank Transaction'
+type: bank_transaction
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

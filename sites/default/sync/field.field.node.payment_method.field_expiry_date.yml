@@ -1,0 +1,21 @@
+uuid: 3fc2c059-70ea-43f0-bd72-7d499a51a05b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expiry_date
+    - node.type.payment_method
+  module:
+    - datetime
+id: node.payment_method.field_expiry_date
+field_name: field_expiry_date
+entity_type: node
+bundle: payment_method
+label: 'Expiry Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

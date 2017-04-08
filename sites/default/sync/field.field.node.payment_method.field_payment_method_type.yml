@@ -1,0 +1,28 @@
+uuid: 9e412cc6-481c-48a6-a2d9-9ba7d0cdf024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_method_type
+    - node.type.payment_method
+    - taxonomy.vocabulary.pa
+id: node.payment_method.field_payment_method_type
+field_name: field_payment_method_type
+entity_type: node
+bundle: payment_method
+label: 'Payment Method Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pa: pa
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

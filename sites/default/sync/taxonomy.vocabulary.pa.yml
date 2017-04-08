@@ -1,0 +1,9 @@
+uuid: 8b65ad11-0944-4b34-85d5-13accfe5a2bb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Payment Method Type'
+vid: pa
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,22 @@
+uuid: facc51c3-3baa-4b6a-86c8-d0ec415a4387
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.expenses
+id: node.expenses.promote
+field_name: promote
+entity_type: node
+bundle: expenses
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

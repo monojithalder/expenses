@@ -1,0 +1,28 @@
+uuid: 41b639cd-3d57-41d6-9eff-7d4056b551b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_method
+    - node.type.expenses
+    - node.type.payment_method
+id: node.expenses.field_payment_method
+field_name: field_payment_method
+entity_type: node
+bundle: expenses
+label: 'Payment Method'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      payment_method: payment_method
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

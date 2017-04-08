@@ -1,0 +1,17 @@
+uuid: 03cfd457-f030-42e3-8c85-a9a8f40c2625
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.payment_method
+  module:
+    - user
+id: node.payment_method.teaser
+targetEntityType: node
+bundle: payment_method
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

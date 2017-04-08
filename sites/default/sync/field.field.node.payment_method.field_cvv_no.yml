@@ -1,0 +1,23 @@
+uuid: fd58568f-5416-46ee-915a-ff4bce2a04f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cvv_no
+    - node.type.payment_method
+id: node.payment_method.field_cvv_no
+field_name: field_cvv_no
+entity_type: node
+bundle: payment_method
+label: 'CVV No'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

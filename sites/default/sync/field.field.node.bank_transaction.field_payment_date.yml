@@ -1,0 +1,21 @@
+uuid: 1bcc944e-109a-491e-bbfd-6b82e32b98b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_date
+    - node.type.bank_transaction
+  module:
+    - datetime
+id: node.bank_transaction.field_payment_date
+field_name: field_payment_date
+entity_type: node
+bundle: bank_transaction
+label: 'Payment Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

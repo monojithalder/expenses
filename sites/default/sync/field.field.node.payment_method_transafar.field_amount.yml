@@ -1,0 +1,23 @@
+uuid: 20568118-0728-40ac-93d0-7349b5eab959
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amount
+    - node.type.payment_method_transafar
+id: node.payment_method_transafar.field_amount
+field_name: field_amount
+entity_type: node
+bundle: payment_method_transafar
+label: Amount
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

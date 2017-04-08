@@ -1,0 +1,27 @@
+uuid: 55d60232-eb1c-4aa5-894b-da6d9a08898b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_payment_method_status
+field_name: field_payment_method_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Active
+      label: Active
+    -
+      value: Inactive
+      label: Inactive
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

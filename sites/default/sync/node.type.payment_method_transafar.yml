@@ -1,0 +1,18 @@
+uuid: 5cc4e3a7-7432-429b-a5f9-64904dcfd36a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Payment Method Transafar'
+type: payment_method_transafar
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

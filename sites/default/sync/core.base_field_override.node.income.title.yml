@@ -1,0 +1,18 @@
+uuid: c6fe61fa-8b18-4633-8e87-09427b0f5be1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.income
+id: node.income.title
+field_name: title
+entity_type: node
+bundle: income
+label: 'Income Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

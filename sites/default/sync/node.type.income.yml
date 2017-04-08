@@ -1,0 +1,18 @@
+uuid: 5956b7dd-540b-4ea7-8978-5db940e397a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Income
+type: income
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

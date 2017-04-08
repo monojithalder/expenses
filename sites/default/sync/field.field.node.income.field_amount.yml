@@ -1,0 +1,25 @@
+uuid: f2b823e1-a397-423f-837a-bab1b253a256
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amount
+    - node.type.income
+id: node.income.field_amount
+field_name: field_amount
+entity_type: node
+bundle: income
+label: Amount
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

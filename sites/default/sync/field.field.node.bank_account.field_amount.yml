@@ -1,0 +1,23 @@
+uuid: b01d5a84-089e-4fea-97dc-ccc9ab2ad320
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amount
+    - node.type.bank_account
+id: node.bank_account.field_amount
+field_name: field_amount
+entity_type: node
+bundle: bank_account
+label: Amount
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

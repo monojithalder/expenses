@@ -1,0 +1,19 @@
+uuid: ec51610f-a5d5-48c1-aa7c-b8d52151765d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_payment_method
+field_name: field_payment_method
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: d275bc75-bc2f-4b40-b1e4-7ef4e96db229
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bank_transaction
+id: node.bank_transaction.title
+field_name: title
+entity_type: node
+bundle: bank_transaction
+label: 'Transaction Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

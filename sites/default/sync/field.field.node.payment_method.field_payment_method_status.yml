@@ -1,0 +1,23 @@
+uuid: 27749145-69aa-450e-87d5-41b2c723eff0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment_method_status
+    - node.type.payment_method
+  module:
+    - options
+id: node.payment_method.field_payment_method_status
+field_name: field_payment_method_status
+entity_type: node
+bundle: payment_method
+label: 'Payment Method Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Active
+default_value_callback: ''
+settings: {  }
+field_type: list_string

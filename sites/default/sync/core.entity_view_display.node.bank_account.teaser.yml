@@ -1,0 +1,17 @@
+uuid: 8ab625ce-ec11-41d9-b20b-e1573a393967
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.bank_account
+  module:
+    - user
+id: node.bank_account.teaser
+targetEntityType: node
+bundle: bank_account
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 36f6d263-847c-4ef4-8ad2-5b6381063285
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.payment_method
+id: node.payment_method.title
+field_name: title
+entity_type: node
+bundle: payment_method
+label: 'Payment Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

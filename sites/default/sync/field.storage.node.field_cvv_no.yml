@@ -1,0 +1,20 @@
+uuid: 2c0b8a7b-c7d2-4046-aa29-cbb143b346c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cvv_no
+field_name: field_cvv_no
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

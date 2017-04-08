@@ -1,0 +1,17 @@
+uuid: aa3088b6-c609-42f9-89d3-24fb1042ccc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.expenses
+  module:
+    - user
+id: node.expenses.teaser
+targetEntityType: node
+bundle: expenses
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

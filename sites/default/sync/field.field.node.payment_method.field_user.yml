@@ -1,0 +1,28 @@
+uuid: 5fed767d-d75b-49f9-802a-721974742fc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.payment_method
+id: node.payment_method.field_user
+field_name: field_user
+entity_type: node
+bundle: payment_method
+label: User
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

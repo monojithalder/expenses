@@ -1,0 +1,17 @@
+uuid: 1eb7d146-88ca-447c-9faf-a506105cf3a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.bank_transaction
+  module:
+    - user
+id: node.bank_transaction.teaser
+targetEntityType: node
+bundle: bank_transaction
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

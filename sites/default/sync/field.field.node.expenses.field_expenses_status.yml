@@ -1,0 +1,23 @@
+uuid: 43e92a86-2922-417e-9240-c1367b835471
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expenses_status
+    - node.type.expenses
+  module:
+    - options
+id: node.expenses.field_expenses_status
+field_name: field_expenses_status
+entity_type: node
+bundle: expenses
+label: 'Expenses Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Active
+default_value_callback: ''
+settings: {  }
+field_type: list_string

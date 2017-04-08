@@ -1,0 +1,9 @@
+uuid: 4c861ac0-7969-479d-ad8b-d120ddf95a33
+langcode: en
+status: true
+dependencies: {  }
+name: 'Expenses Category'
+vid: expenses_category
+description: ''
+hierarchy: 0
+weight: 0

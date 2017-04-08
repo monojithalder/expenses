@@ -1,0 +1,21 @@
+uuid: 2e6d6a7a-d9a3-4a46-a0cf-949f3f190945
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transaction_status
+    - node.type.bank_transaction
+  module:
+    - options
+id: node.bank_transaction.field_transaction_status
+field_name: field_transaction_status
+entity_type: node
+bundle: bank_transaction
+label: 'Transaction Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

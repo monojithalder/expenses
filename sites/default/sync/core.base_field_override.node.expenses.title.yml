@@ -1,0 +1,18 @@
+uuid: 09701f1d-de39-41d7-bd76-41a2b28b8840
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.expenses
+id: node.expenses.title
+field_name: title
+entity_type: node
+bundle: expenses
+label: 'Expenses Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

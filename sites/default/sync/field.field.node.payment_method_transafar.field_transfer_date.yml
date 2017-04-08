@@ -1,0 +1,24 @@
+uuid: 1d79398d-4fa4-4f14-ac1a-0c24169bc120
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transfer_date
+    - node.type.payment_method_transafar
+  module:
+    - datetime
+id: node.payment_method_transafar.field_transfer_date
+field_name: field_transfer_date
+entity_type: node
+bundle: payment_method_transafar
+label: 'Transfer Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

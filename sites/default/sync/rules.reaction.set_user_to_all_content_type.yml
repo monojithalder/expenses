@@ -1,0 +1,33 @@
+uuid: 49234939-ff9e-4365-9fc7-0c304ef7fe50
+langcode: en
+status: true
+dependencies: {  }
+id: set_user_to_all_content_type
+label: 'Set User to All content type'
+events:
+  -
+    event_name: 'rules_entity_insert:node'
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: e3bc3046-f930-43e9-980e-ed193240a8aa
+  conditions:
+    id: rules_and
+    uuid: de83abfa-4b60-48dc-adb9-1fc432119a24
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 55bb00cd-7a3e-4aa5-aa33-17713870de89
+    actions:
+      -
+        id: rules_action
+        uuid: 105fb804-12c9-4824-99ad-9559b62a78d0
+        context_values: {  }
+        context_mapping:
+          entity: node
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: rules_set_user_field

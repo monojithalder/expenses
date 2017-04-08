@@ -1,0 +1,23 @@
+uuid: 62e2c043-8e0b-4264-91c3-b0b07a7328fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amount
+    - node.type.payment_method
+id: node.payment_method.field_amount
+field_name: field_amount
+entity_type: node
+bundle: payment_method
+label: Amount
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
