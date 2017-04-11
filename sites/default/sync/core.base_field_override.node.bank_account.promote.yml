@@ -1,0 +1,22 @@
+uuid: 03bb486c-b64d-484a-be76-710765ff8f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bank_account
+id: node.bank_account.promote
+field_name: promote
+entity_type: node
+bundle: bank_account
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

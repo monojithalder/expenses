@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'uN_amJOZmhQzi9MuV1rwdLiObZ6hfRZkFGJPNhcE59oVHjDQLBiyVG8Mh6KDoUE3gVoFIam4iw';
+$settings['hash_salt'] = '0lkFrLVsKaXLcF4MvjoImxMjBnfW4ZyPm6H7z0wlYqxzEXcd6T7YrA93r2YgOu1-aMVDxtCHLQ';
 
 /**
  * Deployment identifier.
@@ -754,9 +754,9 @@ $settings['file_scan_ignore_directories'] = [
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'expenses',
+  'database' => 'personal_expenses',
   'username' => 'root',
-  'password' => '123',
+  'password' => 'personal12345',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '',

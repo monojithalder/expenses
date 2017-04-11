@@ -1,0 +1,12 @@
+uuid: 1bdba39e-08a8-4a6c-bb1d-34e6ff7e1dba
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: pou0FILRiXtZioh1SL8v-cNcezIaasZxpjoy2jaVM40
+id: comment.drupalgap
+label: DrupalGap
+targetEntityType: comment
+cache: true

@@ -1,0 +1,12 @@
+uuid: 18e1ed3a-981a-41af-a260-23822ca450e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: rIF5KPJ7uMhe-G-rSM1a5ZZQQaFK3raohBM_KjReB4o
+id: user.drupalgap
+label: DrupalGap
+targetEntityType: user
+cache: true

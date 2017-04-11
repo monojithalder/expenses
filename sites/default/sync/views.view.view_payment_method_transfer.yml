@@ -416,7 +416,18 @@ display:
             label: ''
           granularity: second
       title: 'View Payment Method Transfer'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<a href="node/add/bank_transaction">Add Transfer</a>'
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships: {  }

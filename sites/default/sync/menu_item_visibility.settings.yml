@@ -1,0 +1,31 @@
+mlid:
+  'menu_link_content:106c7ec8-81fc-40cf-a0f3-1a53128f6425':
+    roles:
+      - administrator
+      - user
+    access_check: false
+  'menu_link_content:47338b0c-5f25-4ae0-92c0-2d8a9e4aaf03':
+    roles:
+      - administrator
+      - user
+    access_check: false
+  'menu_link_content:2e8eb0fd-57be-4cc8-a8b7-f109af6f35f8':
+    roles:
+      - administrator
+      - user
+    access_check: false
+  'menu_link_content:31b15485-6800-4c57-84be-c4c8fd024dc6':
+    roles:
+      - administrator
+      - user
+    access_check: false
+  'menu_link_content:8cf95176-bd68-4fe5-bfee-855a1a0e4c4d':
+    roles:
+      - administrator
+      - user
+    access_check: false
+  'menu_link_content:68ff30ff-3868-4e54-8b68-b38a159d7cf5':
+    roles:
+      - administrator
+      - user
+    access_check: false

@@ -1,0 +1,21 @@
+uuid: f5be0bb3-c927-4cda-86b3-3dc861d9a127
+langcode: en
+status: true
+dependencies: {  }
+id: user
+label: User
+weight: 3
+is_admin: null
+permissions:
+  1: 'edit own bank_account content'
+  2: 'create bank_transaction content'
+  3: 'edit own bank_transaction content'
+  4: 'create expenses content'
+  5: 'edit own expenses content'
+  6: 'create income content'
+  7: 'edit own income content'
+  8: 'create payment_method content'
+  9: 'edit own payment_method content'
+  10: 'create payment_method_transafar content'
+  11: 'edit own payment_method_transafar content'
+  12: 'create bank_account content'

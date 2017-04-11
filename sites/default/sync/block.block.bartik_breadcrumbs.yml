@@ -1,6 +1,6 @@
 uuid: c0ca0fd4-bd1f-4a1b-b0b0-3c5de87c3796
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: bartik_breadcrumbs
 theme: bartik
-region: breadcrumb
-weight: 0
+region: '-1'
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

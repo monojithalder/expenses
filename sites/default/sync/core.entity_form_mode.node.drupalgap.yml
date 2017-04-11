@@ -1,0 +1,12 @@
+uuid: 7ff48584-ad5f-4f9f-8a57-7d4e2626572b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: uanmPjONy1XZ5VFteWi-p4yU8L_6_dL4GiKgUHY4-P4
+id: node.drupalgap
+label: DrupalGap
+targetEntityType: node
+cache: true
